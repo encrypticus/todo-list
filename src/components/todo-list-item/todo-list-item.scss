@@ -1,0 +1,40 @@
+.todo-list-item {
+  $block-name: &;
+  font-size: 1.25rem;
+
+  &_important {
+
+    #{$block-name}__label {
+      color: steelblue;
+      font-weight: bold;
+    }
+  }
+
+  &_done {
+
+    #{$block-name}__label {
+      text-decoration: line-through;
+    }
+  }
+
+  &_important {
+
+    #{$block-name}__label {
+      font-weight: bold;
+      color: steelblue;
+    }
+  }
+
+  button {
+    width: 35px;
+    margin: 3px;
+  }
+
+  &__label {
+    margin-left: 1.25rem;
+    line-height: 35px;
+    cursor: pointer;
+    user-select: none;
+  }
+}
+
